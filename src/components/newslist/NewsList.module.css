@@ -1,0 +1,70 @@
+.newsContainer {
+    width: 100%;
+    padding: 20px 0;
+}
+.cardContainer {
+    
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; */
+
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.card {
+    width: 240px;
+    min-height: 200px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card > div {
+    flex: 1
+}
+
+.cardTop {
+    width: 100%;
+    height: 60%;
+    
+}
+.cardTop > img {
+    display: block;
+    width: 100%;
+}
+
+.cardBottom {
+    padding: 10px;
+    overflow: hidden;
+}
+.cardBottom a {
+    text-decoration: none;
+    color: #000;
+}
+.cardBottom a:hover {
+    color: rgb(47, 162, 255);
+}
+.cardBottom p {
+    font-size: 14px;
+}
+
+
+
+@media all and (max-width: 480px) {
+    .card {
+        width: 100%;
+        
+    }
+
+    .cardBottom {
+        padding: 20px;
+    }
+}
