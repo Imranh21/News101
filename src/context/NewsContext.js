@@ -15,7 +15,7 @@ function NewsContext({children}) {
     const [input, setInput] = useState("")
 
     useEffect(() => {
-        Axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=52179aaf05644997badf5a31e63dfb43")
+        Axios.get("https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&apiKey=52179aaf05644997badf5a31e63dfb43")
         .then(res => {
             
             const allArticles = res.data.articles
