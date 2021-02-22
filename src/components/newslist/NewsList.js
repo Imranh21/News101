@@ -10,7 +10,7 @@ function NewsList() {
     const {loading, data} = state;
 
     if (loading){
-        return "Loading..."
+        return "We are sorry. Newsapi.org has changed its free service to only allow API calls locally."
     }
     
 
